@@ -3929,3 +3929,21 @@ input, select, textarea {
 	}
 
 	*/
+/* FIX: Nội dung bị mất khi giảm height */
+.spotlight {
+	overflow: visible !important;
+	min-height: 100vh !important;
+	height: auto !important;
+	position: relative !important;
+	/* QUAN TRỌNG */
+}
+
+.spotlight .content {
+	position: relative !important;
+	/* Đổi từ absolute sang relative */
+	width: 100% !important;
+	left: auto !important;
+	right: auto !important;
+	top: auto !important;
+	bottom: auto !important;
+}
